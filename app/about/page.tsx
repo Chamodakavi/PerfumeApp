@@ -73,7 +73,7 @@ const AboutUs = () => {
             >
               <Icon as={FaLeaf} boxSize={6} color="green.500" mr={3} />
               <Text fontSize="md" color="white">
-                Premium Ingredients: Sourced from rare flowers, rich woods, and
+                Premium Ingredients:Sourced from rare flowers, rich woods, and
                 exotic spices.
               </Text>
             </Box>
