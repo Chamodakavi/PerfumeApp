@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 
 import { useState } from "react";
-
+import "../globals.css";
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -32,7 +32,13 @@ const ContactUs = () => {
   };
 
   return (
-    <Container maxW="container.md" py={"10%"} bg="black" color="white">
+    <Container
+      maxW="container.md"
+      pt={{ base: "25%", md: "10%" }}
+      pb={{ base: "30%", md: "5%" }}
+      bg="black"
+      color="white"
+    >
       <VStack gap={6} textAlign="center">
         <Text fontSize="lg" color="white">
           Have a question or need assistance? Reach out to us—we’d love to hear

@@ -6,6 +6,7 @@ import Perfume from "../images/OIP.png"; // Ensure image path is correct
 import AdvancedPerfumeTechnologies from "./AdvanceTechnologies";
 import TimeLine from "./TimeLine";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const MotionBox = motion(Box);
 const MotionText = motion(Text);
@@ -131,7 +132,7 @@ function LandingSection() {
           <Box
             bg={"black"}
             color={"white"}
-            pt={20}
+            py={20}
             display={"flex"}
             justifyContent={"center"}
             flexDirection={"column"}
@@ -155,7 +156,7 @@ function LandingSection() {
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.3 }}
               >
-                Contact Us
+                <Link href="/contact">Contact Us</Link>
               </MotionButton>
             </Box>
           </Box>
