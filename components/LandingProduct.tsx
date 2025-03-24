@@ -161,7 +161,10 @@ function ShoeCarousel() {
             mt={3}
             position={"relative"}
             top={0}
-            display={{ base: "block", md: "flex" }}
+            display="flex"
+            flexDirection={{ base: "column", md: "row" }} // Stack on mobile, row on larger screens
+            gap={2} // Adds spacing between buttons
+            width="100%" // Ensures full width in mobile view
           >
             <StyleButton mr={2}>Add to Cart</StyleButton>
             <StyleButton colorScheme="red">Buy</StyleButton>
